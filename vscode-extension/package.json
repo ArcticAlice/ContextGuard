@@ -1,0 +1,11 @@
+{
+  "name": "contextguard-vscode",
+  "displayName": "ContextGuard",
+  "description": "Automatically sends the active VS Code file and Git branch to ContextGuard as a focus source.",
+  "version": "0.1.0",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": { "commands": [{ "command": "contextguard.refreshFocus", "title": "ContextGuard: Refresh focus" }] }
+}

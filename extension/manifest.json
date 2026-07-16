@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "ContextGuard",
+  "version": "0.1.0",
+  "description": "Groups low-context browser tabs around your current focus.",
+  "permissions": ["tabs", "tabGroups", "storage"],
+  "host_permissions": ["http://localhost:3000/*"],
+  "action": { "default_title": "ContextGuard", "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js", "type": "module" }
+}
